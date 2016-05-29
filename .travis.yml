@@ -1,0 +1,16 @@
+# Language
+language: java
+
+# Branches to build
+branches:
+  only:
+    - master
+    - develop
+
+# Notifications
+notifications:
+  email:
+    recipients:
+      - lee.winder@gmail.com
+    on_success: change
+    on_failure: change
