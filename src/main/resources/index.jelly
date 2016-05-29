@@ -1,7 +1,4 @@
 <?jelly escape-by-default='true'?>
-<!--
-  This view is used to render the installed plugins page.
--->
 <div>
-  This plugin is a sample to explain how to write a Jenkins plugin.
+  Replaces any spaces in a job name when it is created on a Jenkins agent. This allows Job names to have spaces without putting spaces in the workspace folder.
 </div>
