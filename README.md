@@ -10,7 +10,7 @@ The WhiteSpace Replacement plug-in still allows the Job name to be the unique id
 
 ### Current Build Status
 Master:  
-[![Build Status](https://travis-ci.org/leewinder/ws-ws-replacement.svg?branch=master)](https://travis-ci.org/leewinder/ws-ws-replacement)  
+[![Build Status](https://travis-ci.org/jenkinsci/ws-ws-replacement-plugin.svg?branch=master)](https://travis-ci.org/jenkinsci/ws-ws-replacement-plugin)
 Develop:  
-[![Build Status](https://travis-ci.org/leewinder/ws-ws-replacement.svg?branch=develop)](https://travis-ci.org/leewinder/ws-ws-replacement)
+[![Build Status](https://travis-ci.org/jenkinsci/ws-ws-replacement-plugin.svg?branch=develop)](https://travis-ci.org/jenkinsci/ws-ws-replacement-plugin)
 
