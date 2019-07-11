@@ -60,7 +60,7 @@ public class WsWsReplacement extends WorkspaceLocator
     private FilePath getWorkSpacePath(Slave slave, TopLevelItem item)
     {
         // Replace the spaces in the job name with underscores
-        String jobName = item.getFullName().replaceAll("\\s","_");
+        String jobName = item.getFullName().replaceAll("\\s","_").replace("%2F","_");
 
         // Get the full path for this job on the slave
         FilePath pathToUse = buildCompletePath(jobName, slave);
