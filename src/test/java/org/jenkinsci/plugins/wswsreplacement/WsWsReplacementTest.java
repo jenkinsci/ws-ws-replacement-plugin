@@ -128,6 +128,34 @@ public class WsWsReplacementTest
                     equalTo(expectedPath));
     }
 
+    @Test
+    public void freeStyleProjectReplacesEncoding() throws Exception
+    {
+        // Get a slave to test against
+        DumbSlave dumbSlave = JenkinsRule.createOnlineSlave();
+
+        String actualPath = createProjectAndGetPath(dumbSlave, "Project%2FWith%2FSlash");
+        String expectedPath = dumbSlave.getRootPath() + "/workspace/Project_With_Slash";
+
+        // Check the path has been updated correctly
+        assertThat( actualPath,
+                    equalTo(expectedPath));
+    }
+
+    @Test
+    public void freeStyleProjectReplacesSpacesAndEncoding() throws Exception
+    {
+        // Get a slave to test against
+        DumbSlave dumbSlave = JenkinsRule.createOnlineSlave();
+
+        String actualPath = createProjectAndGetPath(dumbSlave, "Project%2FWith%2FSlash And Space");
+        String expectedPath = dumbSlave.getRootPath() + "/workspace/Project_With_Slash_And_Space";
+
+        // Check the path has been updated correctly
+        assertThat( actualPath,
+                    equalTo(expectedPath));
+    }
+
     //
     // Returns the path of the creates project
     //
